@@ -11,7 +11,7 @@ import SwiftUI
 struct HackbrightJournalApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EntryListView()
         }
     }
 }
