@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333E966428775B6B00462AE5 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333E966328775B6B00462AE5 /* Date+Ext.swift */; };
 		33C3A53A2875F2D100E006CF /* HackbrightJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C3A5392875F2D100E006CF /* HackbrightJournalApp.swift */; };
 		33C3A53E2875F2D300E006CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33C3A53D2875F2D300E006CF /* Assets.xcassets */; };
 		33C3A5412875F2D300E006CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33C3A5402875F2D300E006CF /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		333E966328775B6B00462AE5 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		33C3A5362875F2D100E006CF /* HackbrightJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackbrightJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C3A5392875F2D100E006CF /* HackbrightJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackbrightJournalApp.swift; sourceTree = "<group>"; };
 		33C3A53D2875F2D300E006CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +40,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		333E965E2877436C00462AE5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				33C3A54D28760D0E00E006CF /* EntryListViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		333E965F2877438000462AE5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				33C3A53D2875F2D300E006CF /* Assets.xcassets */,
+				33C3A53F2875F2D300E006CF /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		333E96602877439600462AE5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				33C3A5492875FD1700E006CF /* DetailView.swift */,
+				33C3A5472875F4EE00E006CF /* EntryListView.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		333E9661287743AD00462AE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33C3A54B2876020300E006CF /* Entry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		333E966228775B5200462AE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				333E966328775B6B00462AE5 /* Date+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		33C3A52D2875F2D000E006CF = {
 			isa = PBXGroup;
 			children = (
@@ -57,13 +101,12 @@
 		33C3A5382875F2D100E006CF /* HackbrightJournal */ = {
 			isa = PBXGroup;
 			children = (
+				333E966228775B5200462AE5 /* Extensions */,
 				33C3A5392875F2D100E006CF /* HackbrightJournalApp.swift */,
-				33C3A5472875F4EE00E006CF /* EntryListView.swift */,
-				33C3A54D28760D0E00E006CF /* EntryListViewModel.swift */,
-				33C3A5492875FD1700E006CF /* DetailView.swift */,
-				33C3A54B2876020300E006CF /* Entry.swift */,
-				33C3A53D2875F2D300E006CF /* Assets.xcassets */,
-				33C3A53F2875F2D300E006CF /* Preview Content */,
+				333E9661287743AD00462AE5 /* Model */,
+				333E96602877439600462AE5 /* ViewModels */,
+				333E965E2877436C00462AE5 /* Views */,
+				333E965F2877438000462AE5 /* Resources */,
 			);
 			path = HackbrightJournal;
 			sourceTree = "<group>";
@@ -149,6 +192,7 @@
 				33C3A54C2876020300E006CF /* Entry.swift in Sources */,
 				33C3A53A2875F2D100E006CF /* HackbrightJournalApp.swift in Sources */,
 				33C3A54A2875FD1800E006CF /* DetailView.swift in Sources */,
+				333E966428775B6B00462AE5 /* Date+Ext.swift in Sources */,
 				33C3A5482875F4EE00E006CF /* EntryListView.swift in Sources */,
 				33C3A54E28760D0E00E006CF /* EntryListViewModel.swift in Sources */,
 			);
@@ -278,7 +322,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HackbrightJournal/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HackbrightJournal/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = FRD38AYZF6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HackbrightJournal/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HackbrightJournal/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = FRD38AYZF6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
