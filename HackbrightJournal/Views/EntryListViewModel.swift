@@ -22,6 +22,11 @@ class EntryListViewModel: ObservableObject {
 //    ]
     
     
+    // MARK: - magic strings
+    let dayStreakText = "DAY STREAK"
+    let entriesText = "ENTRIES"
+    static let emptyMessage = "You have not written any entries yet"
+    
     //CRUD
     // func(keyword for function) functionName(argumentLabels: Parameters) -> Return Type { Body }
     func createEntry(_ entry: Entry) {
@@ -37,6 +42,12 @@ class EntryListViewModel: ObservableObject {
         saveToPersistenceStore()
     
     }
+    
+    func removeEntry(indexSet: IndexSet) {
+        entries.remove(atOffsets: indexSet)
+        saveToPersistenceStore()
+    }
+    
     
     // MARK: - Dashboard
     func getStreak() {
